@@ -1,0 +1,5 @@
+{
+    "require": {
+        "laravel-notification-channels/gammu": "^0.0.8"
+    }
+}

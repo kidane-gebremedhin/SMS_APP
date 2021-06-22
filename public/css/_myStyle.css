@@ -1,0 +1,164 @@
+.itemPerBoxElementDiv p{
+    margin-bottom: -3px;
+}
+.itemPerBoxElementDiv{
+    background: #fff;
+    width: 108%;
+    border: 1px solid lightgray;
+    height: 110px;
+}
+.itemPerBoxElement{
+    color: black;
+}
+.itemPerBoxElement_photoDiv{
+}
+.itemPerBoxElement_photoImg{
+    width: 150px; height: 108px;
+}
+
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    .inputfile + label {
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+
+    .inputfile:focus + label,
+    .inputfile + label:hover {
+        background-color: lightgreen;
+    }
+    .inputfile + label {
+        cursor: pointer; 
+    }
+    .inputfile:focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    #my_camera, #results{
+     /*width: 320px;
+     height: 240px;*/
+     border: 1px solid black;
+    }
+
+.menu-icons{
+    /*border-radius: 20%; */
+    height: 80px; 
+    width: 80px;
+    padding: 10px;
+    /*border: 1px solid gray;*/
+}
+.tab-content ul li:hover{
+    background: lightgreen;
+}
+
+.photoDiv{
+    width: 150px; height: 150px; border: 1px solid gray; border-radius: 20%;
+}
+
+.photoImg{
+    width: 100%; height: 100%; border-radius: 20%;
+}
+
+
+.showDiv{
+    width: 600px; height: 300px; border: 1px solid gray; border-radius: 20%;
+}
+
+.showImg{
+    width: 100%; height: 100%; border-radius: 20%;
+}
+
+/* thead{background: #005566;}
+*/
+ body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close_G12, .close_G10, .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close_G12, .close_G10, .close:hover,
+.close_G12, .close_G10, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: //#5cb85c;
+    background-color:#005566;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px
+    background-color: //#5cb85c;
+    background-color: #005566;
+    color: white;
+}
+
+.searchBooksTf{
+    background: lightgray;
+    border-bottom: 10px solid gray;
+    border-radius: 20%;
+}
+
+.bookImage{
+    width: 140px;
+    height: 160px;
+}
+
