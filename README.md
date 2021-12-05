@@ -1,19 +1,20 @@
 # DOT_SMS_APP
-*** Send SMS without a Gateway API in a Laravel Application *** 
+<h2>*** Send SMS without a Gateway API in a Laravel Application ***</h2>
 <br><br>
 Send SMS without a Gateway API Laravel Application. (contact me on kidane12g@gmail.com for more information)
 <br>
-*** Getting Started ***
+<h3>*** Getting Started ***</h3>
 <br>
 Clone this repository
 <br>
 git clone https://github.com/kidane-gebremedhin/SMS_APP.git
 <br>
+<br>
 Change Directory
 <br>
 cd SMS_APP
 <br>
-install all dependencies
+<h3>install all dependencies</h3>
 <br>
 composer install 
 <br>
@@ -26,7 +27,7 @@ Generate Application secure key (in .env file)
 php artisan key:generate
 <br>
 
-*** Database Connection Setup ***
+<h3>*** Database Connection Setup ***</h3>
 <br>
 Create a database and update .env file with database credentials
 <br>
@@ -42,7 +43,8 @@ DB_USERNAME=Your-database-username
 <br>
 DB_PASSWORD=Your-database-password
 <br>
-*** Run migrations ***
+<br>
+<h3>*** Run migrations ***</h3>
 <br>
 php artisan migrate
 <br>
@@ -51,6 +53,6 @@ Serve the Application
 php artisan serve
 <br>
 <br>
-Connect your SMS USB Modem
+<h3>Connect your SMS USB Modem</h3>
 <br>
-That's It! Now you can send SMS messages to any number :)
+<h3>That's It! Now you can send SMS messages to any number :)</h3>
