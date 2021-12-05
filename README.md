@@ -12,7 +12,7 @@ Change Directory
 <br>
 cd SMS_APP
 <br>
-<h3>install all dependencies</h3>
+<h3>Install all dependencies</h3>
 composer install 
 <br>
 Copy .env.example to .env
@@ -48,5 +48,5 @@ Serve the Application
 php artisan serve
 <br>
 <br>
-<h3>Connect your SMS USB Modem</h3>
+<h3>Connect/PlugIn your SMS USB Modem</h3>
 <h3>That's It! Now you can send SMS messages to any number :)</h3>
