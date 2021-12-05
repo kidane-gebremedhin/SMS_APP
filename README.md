@@ -1,5 +1,5 @@
 # DOT_SMS_APP
-*** Send SMS without a Gateway API in a Laravel Application ***
+*** Send SMS without a Gateway API in a Laravel Application *** <br>
 Send SMS without a Gateway API Laravel Application. (contact me on kidane12g@gmail.com for more information)
 
 *** Getting Started ***
