@@ -9,7 +9,6 @@
         "andegna/calender": "^2.1",
         "hisorange/browser-detect": "^4.2",
         "intervention/image": "dev-master",
-        "laravel-notification-channels/gammu": "^0.0.8",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4",
@@ -55,6 +54,9 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     }
 }

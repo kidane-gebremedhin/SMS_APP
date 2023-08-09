@@ -1,0 +1,45 @@
+# Steps to set up a Laravel 5.4 server on Ubuntu 20
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install apache2
+sudo apt install php7.4 php7.4-cli php7.4-mbstring php7.4-xml php7.4-zip php7.4-mysql php7.4-gd php7.4-curl
+sudo apt install composer
+sudo apt install mysql-server
+
+
+sudo mysql # enter your superadmin pwd here
+
+CREATE DATABASE dot_sms_app;
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+GRANT ALL ON dot_sms_app.* TO 'admin'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+#Move the dot_sms_app project into /var/www/html directory
+cd dot_sms_app
+composer install
+php artisan migrate
+
+sudo nano /etc/apache2/sites-available/dot_sms_app.conf
+# Paste the following
+<VirtualHost *:80>
+    ServerName http://localhost
+    DocumentRoot /var/www/html/dot_sms_app/public
+
+    <Directory /var/www/html/dot_sms_app>
+        AllowOverride All
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+sudo a2ensite dot_sms_app.conf
+sudo a2enmod rewrite
+
+sudo service apache2 restart

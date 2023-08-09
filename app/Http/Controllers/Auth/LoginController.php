@@ -103,7 +103,7 @@ public function sign_up_form()
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
- /*   public function public_login(Request $request)
+    public function public_login(Request $request)
     {
         $lang=$request->selectedLang;
         if($lang!=null){
@@ -132,7 +132,7 @@ public function sign_up_form()
         $this->incrementLoginAttempts($request);
 
         return $this->sendFailedLoginResponse($request);
-    }*/
+    }
 
     /**
      * Show the application's login form.
